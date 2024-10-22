@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:developer';
 import 'dart:io';
 import 'package:lineup/lineup.dart';
 import 'package:path/path.dart' as path;
@@ -44,11 +45,11 @@ class LineupDatabaseInitializerImpl implements LineupDatabaseInitializer {
 
     if (base.existsSync()) {
       final data = base.readAsStringSync();
-      print('--------------------------------------\nREAD SUCCESSFULLY');
-      print('data $data');
+      log('--------------------------------------\nREAD SUCCESSFULLY');
+      log('data $data');
 
       final decryptData = db.encrypt.decrypt(data);
-      print('decryptData $decryptData');
+      log('decryptData $decryptData');
 
       return true;
     }

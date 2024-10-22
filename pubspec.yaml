@@ -1,7 +1,7 @@
 name: lineup
-description: "A new Flutter project."
-version: 0.0.1
-homepage: ''
+description: "An ultra-secure, lightning-fast database package offering robust encryption and high performance for modern applications."
+version: 0.0.1-dev-1
+homepage: 'https://github.com/LineupBase/dart'
 
 environment:
   sdk: ^3.5.0

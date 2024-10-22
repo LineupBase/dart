@@ -25,7 +25,8 @@ class LineupDatabaseInitializerImpl implements LineupDatabaseInitializer {
   Future<bool> create() async {
     // Open or create a database
     var dbFactory = idbFactoryBrowser;
-    Database indexedDB = await dbFactory.open(db.name, version: db.version,
+    // Database indexedDB =
+    await dbFactory.open(db.name, version: db.version,
         onUpgradeNeeded: (VersionChangeEvent event) {
           var db = event.database;
           // Create an object store if not exists

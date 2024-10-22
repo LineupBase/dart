@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:developer';
 import 'dart:typed_data';
 import 'package:encrypt/encrypt.dart';
 import 'package:lineup/src/core/encryption/encrypt_service.dart';
@@ -63,5 +64,5 @@ class EncryptServiceSample implements LineupEncryptService {
 }
 
 void main() {
-  print(Key.fromSecureRandom(32).base64);
+  log(Key.fromSecureRandom(32).base64);
 }
